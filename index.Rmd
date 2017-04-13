@@ -1,10 +1,10 @@
 ---
-title: QUIPU 2.0
+title: QUIPO 2.0
 author: 'Flavio Lozano Isla'
 description: Procedimientos estadísticos para la investigación y uso del software estadístico R
 date: '`r Sys.Date()`'
-url: https\://flavjack.github.io/quipu/
-github-repo: flavjack/quipu
+url: https\://flavjack.github.io/quipo/
+github-repo: flavjack/quipo
 cover-image: img/cover.png
 favicon: img/favicon.ico
 site: bookdown::bookdown_site

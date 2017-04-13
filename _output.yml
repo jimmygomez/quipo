@@ -15,7 +15,7 @@ bookdown::gitbook:
       family: sans
       size: 2
     search: yes
-    edit: https://github.com/Flavjack/quipu/blob/master/%s
+    edit: https://github.com/Flavjack/quipo/blob/master/%s
     sharing:
       github: yes
       twitter: no
