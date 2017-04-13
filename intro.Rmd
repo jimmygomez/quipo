@@ -1,0 +1,18 @@
+# Introducción
+
+## Método científico
+
+Siempre nos estamos haciendo preguntas de las cosas que suceden a nuestro alrededor, para responder a esas preguntas de forma sistematica, se hace uso del metodo cientifico. El metodo cientifico se incia con una observacion de algo que nos llamas la atencion, esto genera preguntas. Con las preguntas que nos realizamos podemos sugerir hipotesis de por que esta ocurriendo dicho fenómeno, por lo que se recurre a un forma de comprobar la hipotesis a traves de un experimento, donde rechazaremos o damos como cierta nuestras hipotesis anteriormente sugeridas, dando como resultado informacion que nos lleva a conclusiones del trabajo, muchas veces esta informacion concluye en esta fase, ya que pocos documentan los resultados. Si los resultados son publicados se generan nuevas ideas o descubrimientos, lo cual puede generar nuevas preguntas para otras personas que deseen seguir explorando dicho tema y es ahi donde se genera el conocimiento, Figura \@ref(fig:metcien).
+
+```{r metcien, fig.cap = "Pasos del método científico", fig.align='center', out.width='80%'}
+knitr::include_graphics("img/metcien.jpg")
+```
+
+
+## La investigacion y la publicacion
+
+La investigacion cientifica y la publicación del artículo científico son dos actividades intimamente relacionadas. Algunas personas creen que la investigación termina cuando se obtienen los resultados, cuando estos se analizan, cuando se entrega el informe del trabajo o cuando la investigación se presenta en una reunión profesional. Sin embargo, la investigación científica formal y seria termina con la publicación del artículo científico; solo así tu contribución pasará a formar parte del conocimiento científico. Algunas personas van más lejos y sugieren que la investigación termina cuando el lector entiende el artículo; es decir, que no basta con publicar el trabajo, también es necesario que la audiencia entienda claramente su contenido [@mari2005manual]. Un analisis brillante resulta inutil si los resultados no son comunicados en lenguaje sencillo y claro [@Gonick1993]. Para escribir un buen artículo científico tienes que conocer y practicar los tres principios básicos de la redacción científica:  precisión, claridad y brevedad. 
+
+## Problemas comunes en la investigación
+
+Uno de los principales porblemas que pude observar a disitintos niveles, tanto en estudiantes como en investigadores, es la falta de organizacion y orden no sólo en las bases de datos, si no en la forma de ejecucion de sus experimentos. Un experimento al ser parte de un plan de trabajo debe ser planificado con anticipacion y tratar de reducir al minimo las posibles los errores o sincronizacion de los tiempos en las evaluaciones y toma de dato. Sumado a este problema los investigadores no suelen tener un diario a para hacer las anotaciones de sus trabajos, esto junto a la mala colecta de la informacion, que usualmnete son en hojas de calculo excel, genera un situacion cada vez más engorroza en la etapas posterioes como el analisis de datos y presentacion de los resultados.

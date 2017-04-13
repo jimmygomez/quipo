@@ -1,0 +1,9 @@
+book_filename: "SRTools"
+output_dir: docs
+rmd_files: [
+  "index.Rmd", 
+  "intro.Rmd",
+  "soft.Rmd",
+  "exp.Rmd",
+  "ref.Rmd"
+  ]

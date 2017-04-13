@@ -1,2 +1,3 @@
-# srtools
-Procedimientos estadísticos para la investigación y uso del software estadístico R
+# bookdown-paper
+
+Template for paper or these document using bookdown package.
