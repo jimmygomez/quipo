@@ -82,8 +82,10 @@ knitr::include_graphics("img/temas.png")
 
 <!-- **Fecha			  :** 27, 28, 30 de junio; 01 y 04 de Julio (5 días) -->
 
-**Requerimiento	:** Laptop
+**Requerimiento	:** 
 
+- Laptop
+- Gmail account (recomendado)
 
 ## Justificación {-}
 
@@ -93,13 +95,13 @@ El desarrollo tecnológico e industrial de los países se basa en la investigaci
 
 - Aprender la planificación y manejo de experimentos bajo distintos diseños estadísticos (DCA, DBCA, FACTORIAL).
 
-- Aprender el uso de herramientas para el análisis estadístico con el software R
+- Aprender el uso de herramientas para el análisis estadístico con el software R.
 
 - Comprender los análisis estadísticos e interpretación de resultados estadísticos.
 
 - Desarrollo de gráficos estadísticos en R. 
 
-- Usar herramientas para facilitar la redacción científica (MENDELEY).
+- Usar herramientas para facilitar la redacción científica.
 
 
 ## Cronograma y contenido de curso {-}
