@@ -61,4 +61,116 @@ Si eres un persona que tiene curiosidad de comenzar una investigacion y no sabes
 
 # Organigrama de temas {-}
 
-[![organigrama](img/temas.png)](https://docs.google.com/spreadsheets/d/1_IZDac1jyBHidA7nvYZ_0NDnnW4foQQTYEmbLt7Zmvs/edit#gid=1705262123)
+```{r temas, fig.align='center', out.width='100%'}
+
+knitr::include_graphics("img/temas.png")
+
+# https://docs.google.com/spreadsheets/d/1_IZDac1jyBHidA7nvYZ_0NDnnW4foQQTYEmbLt7Zmvs/edit#gid=1705262123
+
+```
+
+
+# Syllabus {-}
+
+## Datos generales {-}
+
+**Programa		:** Herramientas para la Investigación Científica
+
+**Requisito 	:** Métodos estadísticos
+
+**Duración		:** 20 horas
+
+<!-- **Fecha			  :** 27, 28, 30 de junio; 01 y 04 de Julio (5 días) -->
+
+**Requerimiento	:** Laptop
+
+
+## Justificación {-}
+
+El desarrollo tecnológico e industrial de los países se basa en la investigación en las áreas de ciencias básicas y aplicadas. Por lo que es importante saber las herramientas para el planeamiento, manejo, análisis e interpretación de información colectada durante los procesos de investigación. Una de las mayores deficiencias para el desarrollo de la investigación es el desconocimiento de dichas herramientas que dificultan el proceso de investigación generando colecta errada de datos e inferencias no acordes a la realidad. Actualmente existen muchas herramientas para el planeamiento y análisis de datos, cuyos costos son muy elevados e inaccesibles para muchos estudiantes y profesionales. En este curso se harán uso de herramientas basados en código libre con amplia aplicación en diferentes ramas de las ciencias que faciliten los procesos de investigación.
+
+## Objetivos {-}
+
+- Aprender la planificación y manejo de experimentos bajo distintos diseños estadísticos (DCA, DBCA, FACTORIAL).
+
+- Aprender el uso de herramientas para el análisis estadístico con el software R
+
+- Comprender los análisis estadísticos e interpretación de resultados estadísticos.
+
+- Desarrollo de gráficos estadísticos en R. 
+
+- Usar herramientas para facilitar la redacción científica (MENDELEY).
+
+
+## Cronograma y contenido de curso {-}
+
+
+```{r}
+
+cronograma <- data.frame(
+  
+   "Horas" = c(
+    
+    4, "", "", "",
+    4, "", "",
+    4, "", "",
+    4, "", "",
+    4, "", ""
+    
+    ),
+
+  
+  "Contenido" = c(
+    
+    "Presentación y requisitos del curso",
+    "Lenguaje R y uso de librerías",
+    "Tipos de variables",
+    "Importación de base de datos a R",
+    "Manipulación, organización y visualización de datos",
+    "Resumen de base de datos", 
+    "Gráfica de resultados (ggplot2)",
+    " Metodología de investigación científica",
+    "Planteamiento y diseño de libro de campo",
+    "Colecta e importación de datos (Gsheet)",
+    "Conceptos basicos de estadistica (Teoria)",
+    "Modelos y diseños experimentales (Teoría)",
+    "Modelos y diseños experimentales (Práctica)",
+    "Modelos y diseños experimentales (Práctica)",
+    "Gráfica de resultados de análisis estadísticos (ggplot2)",
+    "Análisis multivariado (Teoría & Gráficos)"
+    
+    )
+
+)
+
+
+knitr::kable(
+  cronograma,
+  #caption = "Cronograma de curso",
+  align = "l",
+  booktabs = TRUE
+  )
+
+```
+
+
+## Softwares {-}
+
+- R Cran
+- R Studio
+- Mendeley
+- GitHub
+
+## Requerimientos técnicos {-}
+
+- Conexión a internet
+- Enchufes para cargar laptops
+- Proyector Multimedia
+- Pizarra
+
+
+
+
+
+
+
