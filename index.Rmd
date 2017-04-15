@@ -34,6 +34,7 @@ options(digits = 2)
 library(fieldbook)
 library(GerminaR)
 library(agricolae)
+library(gsheet)
 library(knitr)
 library(cowplot)
 library(ggplot2)
@@ -164,7 +165,7 @@ knitr::kable(
 
 - [R](https://cran.rstudio.com/)
 - [R Studio](https://www.rstudio.com/products/rstudio/download/)
-- [Mendely](https://www.mendeley.com/)
+- [Mendeley](https://www.mendeley.com/)
 - [Github desktop](https://desktop.github.com/)
 
 ## Requerimientos técnicos {-}

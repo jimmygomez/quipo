@@ -1,1 +1,108 @@
 # Cursos y participantes
+
+```{r participantes}
+
+participantes <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/1_IZDac1jyBHidA7nvYZ_0NDnnW4foQQTYEmbLt7Zmvs/edit#gid=2139887140")
+
+```
+
+
+## Univeridad Nacional Agraria la Molina (UNALM)
+
+**Organizador:** Facultad de Agronomía.
+
+**Lugar:** UNALM, Lima, Perú.
+
+**Fecha:** 27, 28, 30 Junio y 1, 2 de Julio 2016.
+
+**Horas:** 20 horas.
+
+**Profesores:**
+
+- Omar Benites Alfaro
+- Flavio Lozano Isla
+
+
+Curso dirigido a los profesores y alumnos de la facultad de Agronomia de la UNALM con soporte financiero de Consorcio de Universidades Flamencas de Bélgica (VLIR)  con el objetivo de fortalecer y mejorar la calidad de la educación en la UNALM.
+
+```{r P201606}
+
+P201606 <- participantes %>% dplyr::filter(FECHA == "2016-06") %>% dplyr::select(PARTICIPANTES, EMAIL)
+
+knitr::kable(
+  P201606,
+  caption = "Participantes del curso. Junio 2016, UNALM",
+  align = "l",
+  booktabs = TRUE
+  )
+
+```
+
+> Agradecimientos a las Profesora Ing. Liliana Aragon por el apoyo y confianza para la organizacion del curso, al Ing. Pablo Gutierrez por organizar y ser el promotor del evento. 
+
+
+
+## Univeridad Nacional Agraria la Molina (UNALM)
+
+**Organizador:** Circulo de Investigacion en Fitomejoramiento (CIF).
+
+**Lugar:** UNALM, Lima, Perú.
+
+**Fecha:** Setiembre de 2014.
+
+**Horas:** 25 horas.
+
+**Profesores:**
+
+- Flavio Lozano Isla
+
+Curso libre impartido a los alumnos voluntarios de las distintas facultades de la UNALM.
+
+
+```{r P201409}
+
+P201409 <- participantes %>% dplyr::filter(FECHA == "2014-09") %>% dplyr::select(PARTICIPANTES, EMAIL)
+
+knitr::kable(
+  P201409,
+  caption = "Participantes del curso. Setiembre 2014, UNALM",
+  align = "l",
+  booktabs = TRUE
+  )
+
+```
+
+> Agradecimientos al Profesor Ing. Andres Virgilio Casa por ayudar en la organizacion y facilitar el uso de los salones de la universidad para poder impartir las clases.
+
+
+## Univeridad Nacional Agraria la Molina (UNALM)
+
+**Organizador:** Circulo de Investigacion en Fitomejoramiento (CIF).
+
+**Lugar:** UNALM, Lima, Perú.
+
+**Fecha:** Julio de 2014.
+
+**Horas:** 25 horas.
+
+**Profesores:**
+
+- Flavio Lozano Isla
+
+Curso dirigido a los alumos de los distintos circulos de investigacion de la UNALM y otras facultades para fomentar y ayudar a los participantes en la investigacion y desarrollo de sus trabajos de tesis.
+
+
+```{r P201407}
+
+P201407 <- participantes %>% dplyr::filter(FECHA == "2014-07") %>% dplyr::select(PARTICIPANTES, EMAIL)
+
+knitr::kable(
+  P201407,
+  caption = "Participantes del curso. Julio de 2014, UNALM",
+  align = "l",
+  booktabs = TRUE
+  )
+
+```
+
+> Agradecimientos al Dr. Raul Blas por su ayuda y facilidad para la organizacion del curso. A Rosaura Laura y Sebastian Davis por ser los promotores y organizadores a traves del CIF y el Laboratorio de Biotecnologia de la UNALM.
