@@ -30,6 +30,22 @@ Recuerda siempre, cualquier hoja adicional que desees incorporar a tu libro de c
 
 ```
 
+Typically a scientist or anyone who works with data will end up with several files with different copies of the data and several files with intermediate steps. If you are working with data, there should have been a time where you had a file with name data, but now you probably have:
+
+StatTools, 2014
+datasharing , 2014
+
+- data
+- data_V01
+- data_V02
+- data_V02_1
+- data_DDMMYY
+- lastdata
+- finaldata
+- veryfinaldata 
+- and some others.
+
+
 ## Colecta de datos
 
 ### Etiquetas

@@ -1,6 +1,6 @@
-# Softwares
+# Softwares y aplicaciones
 
-Los software que se haran uso en este libro, son de distribucion gratuitas o de codigo abierto, con esto se quiere fomentar la reduccion del uso de software pirata y el problema de las actulizaciones por los costos de licencias de softwara de pago. 
+Los software que se haran uso en este guia, son de distribucion gratuitas o de codigo abierto, con esto se quiere fomentar la reducción del uso de software pirata y los costos de licencias de softwara de pago. 
 
 ## Software estadistico R
 
@@ -10,37 +10,76 @@ Cuando  R. Ihaka e R. Gentleman lanzaron el software R, le atribuyeron funcional
 
 Desde su creacion, R paso a ser un lenguaje de programacion y ambiente para el analisis estadistica computacional y generacion de graficos. El software R da una amplia variedad de analisis estadisticos, tales como, modelaje lineal y no lineal, testes estadisticos clasicos, analisis de series temporales, clasificacion, cluster y técnicas graficas, todas de alta reporductivilidad. O R fue desarrollado en un entorno de lenguaje de programacion legitima, y permite a los usuarios adicionar nuevas funcionalidades de acuerdo a sus necesidades. Las funcionalidades de R pueden ser extendidas a traves de paquetes para desarrollar ciertas funciones determinadas. Actualamente existen 8 paquetes basicos fornecidos por la distribucion de R y otras tantas estan disponibles a traves del CRAN, con servidores en la internet que cubren una amplia gama de herramientas estadisticias modernas e R e outroas tantaos [@R-base].
 
-### Por que usar R
-
-```{r wayr, fig.align='center', out.width='80%'}
+```{r wayr, fig.align='center', out.width='80%', fig.cap= "Por que usar R?"}
 knitr::include_graphics("img/wlr.png")
 ```
 
 
 ## R studio
 
+RStudio es un entorno de desarrollo integrado (IDE) para R. Incluye una consola, editor de resaltado de sintaxis que soporta la ejecución directa de código, así como herramientas para graficar, historial, la depuración y la gestión del espacio de trabajo. RStudio está disponible en codigo libre y ediciones comerciales y se ejecuta en el escritorio (Windows, Mac y Linux).
+
+> "RStudio makes R easier to use. It includes a code editor, debugging & visualization tools. RStudio (2017)"
+
+**Principales caracterisitcas**
+
+- Integracion a la ayuda y documentación de R.
+- Administrar fácilmente múltiples directorios de trabajo mediante proyectos.
+- Navegador de espacio de trabajo y visualizador de datos.
+- Ejecutar código R directamente desde el editor fuente.
+- Saltar rápidamente a las definiciones de funciones.
+- Extensas herramientas de desarrollo de paquetes.
+- Redacción de documentos cientificos.
+
+```{r rstudio, fig.align='center', out.width='70%', fig.cap="Interface de RStudio"}
+knitr::include_graphics("img/rstudio.png")
+```
 
 ## Mendeley
+
+Mendeley es un gestor de referencia gratuito y una red social académica que ayuda en la organizar de las investigaciones, colaborar con otros en línea y descubrir las últimas investigaciones.
+
+**Principales caracterisitcas**
+
+- Generar automáticamente bibliografías.
+- Colaborar fácilmente con otros investigadores en línea.
+- Importar fácilmente documentos de otro software de investigación.
+- Encuentrar documentos relevantes basados en lo que está leyendo.
+- Acceder a sus documentos desde cualquier lugar en línea.
+- Leer documentos sobre la marcha, con las aplicaciones para dispositivos moviles.
+
+```{r mendeley, out.width='50%', fig.show='hold'}
+knitr::include_graphics("img/mendeley.jpg")
+knitr::include_graphics("img/mendeley2.jpg")
+```
 
 
 ## Google spreadsheets
 
-- organizacion de datos
-- field book (estrcuture - etiquetas)
-- tablas dinamicas
+Google spreadsheet es un servicio vía web de hojas de cálculo, realizado en tecnología *AJAX*. Con ella se puede realizar la mayoría de las funciones que dejan las aplicaciones de hojas de cálculos de los programas ofimáticos (microsoft office), como realizar operaciones entre celdas con diferentes tipos de funciones (matemáticas, financieras, lógicas, de fechas, de búsquedas, estadísticas, con cadenas e informativas), ordenar columnas, manejar diferentes hojas dentro de cada fichero, manejas ficheros del tipo *xlsx* y *csv*, etc. 
+
+**Principales usos**
+
+1. Organizacion y colecta de datos.
+1. Tablas dinamicas.
+1. Generacion de etiquetas.
+
+```{r gss, out.width='80%', fig.align='center'}
+knitr::include_graphics("img/gss.png")
+```
 
 
-Typically a scientist or anyone who works with data will end up with several files with different copies of the data and several files with intermediate steps. If you are working with data, there should have been a time where you had a file with name data, but now you probably have:
+## Next Generation Label Printing System
 
-StatTools, 2014
-datasharing , 2014
+**RSJ Next Generation Label Printing System** es una aplicacion para facilitar la creación e impresión de etiquetas que contienen datos suministrados directamente en su navegador y como componente de las hojas de calculo de google spreadsheet.
 
-- data
-- data_V01
-- data_V02
-- data_V02_1
-- data_DDMMYY
-- lastdata
-- finaldata
-- veryfinaldata 
-- and some others.
+```{r nglsp, out.width='80%', fig.align='center'}
+knitr::include_graphics("img/nglsp.jpg")
+```
+
+
+
+
+
+
+

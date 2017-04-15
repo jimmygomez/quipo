@@ -31,7 +31,9 @@ knitr::opts_chunk$set(
 
 options(digits = 2)
 
+library(fieldbook)
 library(GerminaR)
+library(agricolae)
 library(knitr)
 library(cowplot)
 library(ggplot2)
@@ -113,10 +115,10 @@ cronograma <- data.frame(
   
    "Horas" = c(
     
-    4, "", "", "",
     4, "", "",
+    4, "", "", 
     4, "", "",
-    4, "", "",
+    4, "", 
     4, "", ""
     
     ),
@@ -127,19 +129,21 @@ cronograma <- data.frame(
     "Presentación y requisitos del curso",
     "Lenguaje R y uso de librerías",
     "Tipos de variables",
+    
     "Importación de base de datos a R",
     "Manipulación, organización y visualización de datos",
     "Resumen de base de datos", 
-    "Gráfica de resultados (ggplot2)",
-    " Metodología de investigación científica",
+    
+    "Metodología de investigación científica",
     "Planteamiento y diseño de libro de campo",
-    "Colecta e importación de datos (Gsheet)",
-    "Conceptos basicos de estadistica (Teoria)",
-    "Modelos y diseños experimentales (Teoría)",
-    "Modelos y diseños experimentales (Práctica)",
-    "Modelos y diseños experimentales (Práctica)",
-    "Gráfica de resultados de análisis estadísticos (ggplot2)",
-    "Análisis multivariado (Teoría & Gráficos)"
+    "Colecta e importación de datos",
+    
+    "Conceptos basicos de estadistica",
+    "Modelos y diseños experimentales",
+    
+    "Gráfica de resultados de análisis estadísticos",
+    "Análisis multivariado",
+    "Presentacion de la aplicación fieldbook"
     
     )
 
@@ -158,10 +162,10 @@ knitr::kable(
 
 ## Softwares {-}
 
-- R Cran
-- R Studio
-- Mendeley
-- GitHub
+- [R](https://cran.rstudio.com/)
+- [R Studio](https://www.rstudio.com/products/rstudio/download/)
+- [Mendely](https://www.mendeley.com/)
+- [Github desktop](https://desktop.github.com/)
 
 ## Requerimientos técnicos {-}
 
