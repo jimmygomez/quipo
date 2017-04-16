@@ -78,8 +78,3 @@ knitr::include_graphics("img/nglsp.jpg")
 ```
 
 
-
-
-
-
-

@@ -1,9 +1,9 @@
 # Planeamiento de experimentos
 
-El planeamineto de un experimento es la parte crusial para definir el éxito de un trabajo experimental, mismo asi se realice un plan de trabajo suceden muchos imprevistos y dudas que van aconteciendo. Para ayudar en esta tarea introduciremos un termino "**fieldbook**" que significa "libro de campo" y fue realizado en una hoja de calculo, que luego se explicara como usarla, la cual contiene los datos minimos que necesitas para realizar tu experimento de esta manera ahorrar mucho tiempo en el procesamiento de los datos, ya que muchas veces no es el analisis que toma mas tiempo, si no la reorganizacion de los datos tomados en campo.
+El planeamineto de un experimento es la parte crusial para definir el éxito de un trabajo experimental, mismo asi cuando se realice un plan de trabajo, acontencen dudas e  imprevistos que van aconteciendo. Para ayudar en esta tarea introduciremos un termino **fieldbook** que significa "libro de campo" y sera realizado en una hoja de calculo, el cual contiene los datos minimos que son necesarios para realizar tu experimento, de esta manera ahorrar tiempo en el procesamiento de los datos, ya que muchas veces no es el analisis el que consume el tiempo del investigador, si no la reorganizacion de los datos colectados durante el experimento.
 
 
-```{block, type='rmdnote'}
+```{block2, type='rmdnote',  echo = T}
 
 Los coputadores presentan una forma especial de leer los datos, ya que muchas veces organizamos estos de la manera que no es mas facil entender a nosotros, lo que genera que al final debemos reorganizar todo, para que el computador pueda entenderlo.
 
