@@ -1,1 +1,131 @@
 # Clases
+
+## Introduccion
+
+Presentación del curso y conceptos basicos de la investigacion y software estadistico R.
+
+```{r SRT001}
+
+shiny::HTML(
+  
+  '
+  <object data="class/SRT001.pdf" type="application/pdf" width="100%" height="420px"></object>
+  
+  '
+  )
+
+```
+
+## Mendeley y organizacion de documentos
+
+Uso del software mendeley para organizar documentos y citacion en la redaccion cientifica.
+
+```{r SRT002}
+
+shiny::HTML(
+  
+  '
+  <object data="class/SRT002.pdf" type="application/pdf" width="100%" height="420px"></object>
+  
+  '
+  )
+
+```
+
+## Introduccion al R
+
+Introducción al tipo de variables y diccionario de las funciones más usadas en R
+
+```{r SRT003}
+
+shiny::HTML(
+  
+  '
+  <object data="class/SRT003.pdf" type="application/pdf" width="100%" height="420px"></object>
+  
+  '
+  )
+
+```
+
+## R studio y funciones
+
+Uso y configuracion de RStudio y manejo de datos (importacion, filtros y seleccion).
+
+```{r SRT004}
+
+shiny::HTML(
+  
+  '
+  <object data="class/SRT004.pdf" type="application/pdf" width="100%" height="420px"></object>
+  
+  '
+  )
+
+```
+
+## Conceptos de estadistica
+
+Conceptos basicos de la estadistica y su explicacion en el uso de los experimentos.
+
+```{r SRT005}
+
+shiny::HTML(
+  
+  '
+  <object data="class/SRT005.pdf" type="application/pdf" width="100%" height="420px"></object>
+  
+  '
+  )
+
+```
+
+## Diseños experimentales
+
+Nociones de los diseños experimentales y modelos matemáticos.
+
+```{r SRT006}
+
+shiny::HTML(
+  
+  '
+  <object data="class/SRT006.pdf" type="application/pdf" width="100%" height="420px"></object>
+  
+  '
+  )
+
+```
+
+## Presentacion de resultados
+
+Presentacion de los resultados en forma grafica usando distintas librerias en R.
+
+```{r SRT007}
+
+shiny::HTML(
+  
+  '
+  <object data="class/SRT007.pdf" type="application/pdf" width="100%" height="420px"></object>
+  
+  '
+  )
+
+```
+
+## Reproductibilidad
+
+Combinacion de la redaccion cientifica con resultados analizados en R.
+
+```{r SRT008}
+
+shiny::HTML(
+  
+  '
+  <object data="class/SRT008.pdf" type="application/pdf" width="100%" height="420px"></object>
+  
+  '
+  )
+
+```
+
+

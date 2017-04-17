@@ -1,39 +1,54 @@
 # Planeamiento de experimentos
 
-El planeamineto de un experimento es la parte crusial para definir el éxito de un trabajo experimental, mismo asi cuando se realice un plan de trabajo, acontencen dudas e  imprevistos que van aconteciendo. Para ayudar en esta tarea introduciremos un termino **fieldbook** que significa "libro de campo" y sera realizado en una hoja de calculo, el cual contiene los datos minimos que son necesarios para realizar tu experimento, de esta manera ahorrar tiempo en el procesamiento de los datos, ya que muchas veces no es el analisis el que consume el tiempo del investigador, si no la reorganizacion de los datos colectados durante el experimento.
+El planeamineto de un experimento es la parte crusial para definir el éxito de un trabajo experimental, mismo asi cuando se realice un plan de trabajo, acontencen dudas e  imprevistos que van aconteciendo. Para ayudar en esta tarea introduciremos un termino **fieldbook** que significa "libro de campo" y se realizará  en una hoja de calculo, el cual contiene los datos minimos que son necesarios para realizar tu experimento, de esta manera ahorrar tiempo en el procesamiento de los datos, ya que muchas veces no es el analisis el que consume el tiempo del investigador, si no la reorganizacion de los datos colectados durante el experimento.
 
 
 ```{block2, type='rmdnote',  echo = T}
 
-Los coputadores presentan una forma especial de leer los datos, ya que muchas veces organizamos estos de la manera que no es mas facil entender a nosotros, lo que genera que al final debemos reorganizar todo, para que el computador pueda entenderlo.
+Los coputadores presentan una forma especial para leer los datos, muchas veces organizamos los datos de manera que es más facil entender a nosotros, lo que genera que al final debemos reorganizar todo, para que el computador pueda entenderlo.
 
 ```
 
 ## Fieldbook
 
-El libro de campo esta constituido por cuatro partes esenciales (las cuales pueden ser aumentadas de acuerdo a las necesidades (ie. Diseño de campo, informacion metereologica, planilla de riego, etc) para cualquier tipo de experimento.
+El libro de campo esta constituido por cuatro partes esenciales (las cuales pueden ser incrementadas de acuerdo a las necesidades (ie. Diseño de campo, informacion metereologica, planilla de riego, etc) de cualquier tipo de experimento.
 
-1. Informacion. Se introducira la informacion del proyecto, como lugar de ejeccuon, tipo de diseño experimental, colaboradores, georeferencia, fecha de inicio y tambien los objetivos del trabajo.
+1. **Informacion.** Se introducira la informacion del proyecto, como lugar de ejecución, tipo de diseño experimental, colaboradores, georeferencia, fecha de inicio y tambien los objetivos del trabajo.
 
-2. Variables. Se realizará una lista de las variables a evaluar durante el experimento, tambien se adicionara las abreviaturas de las variables las cuales iran como encabezados en la hoja de diseño estadistico.
+1. **Variables.** Se realizará una lista de las variables a evaluar durante el experimento, tambien se adicionara las abreviaturas de las variables las cuales iran como encabezados en la hoja de diseño estadistico.
 
-3. Diseño estadistico. Se introducira el tipo de diseño experimental (ie. DCA, DBCA, DCL) los cuales pueden ser generados con el paquete *agricolae* [@R-agricolae].
+1. **Diseño estadistico.** Se introducira el tipo de diseño experimental (ie. DCA, DBCA, DCL) los cuales pueden ser generados con el paquete *agricolae* [@R-agricolae].
 
-4. Calendario. Se generará el calendario de evaluaciones y actividades para poder organizar las acciones durante el experimento (ie. uso de materiales, pretamos de equipos, disponibilidad de espacios, etc)
+1. **Calendario.** Se generará el calendario de evaluaciones y actividades para poder organizar las acciones durante el experimento (ie. uso de materiales, pretamos de equipos, disponibilidad de espacios, etc)
 
-5. Diario. Se recolectara informacion de lo que va aconteciendo en el experimento, se registrara el dia y las observaciones, asi como comentarios personales.
+1. **Diario.** Se recolectara informacion de lo que va aconteciendo en el experimento, se registrara el dia y el conteo en dias despues del inicio del experimento, las observaciones, asi como comentarios personales.
 
 
-```{block, type='rmdtip'}
+```{block2, type='rmdwarning',  echo = T}
 
 Recuerda siempre, cualquier hoja adicional que desees incorporar a tu libro de campo, es recomendable no crear otra hoja de calculo, es mejor adicionar pestañas a la hoja actual, de esta forma toda tu informacion de tu trabajo esta en un solo documento, y facil de compartir entre colaboradores.
 
 ```
 
-Typically a scientist or anyone who works with data will end up with several files with different copies of the data and several files with intermediate steps. If you are working with data, there should have been a time where you had a file with name data, but now you probably have:
+### Nombre del Fieldbook
 
-StatTools, 2014
-datasharing , 2014
+Muchas veces colocar un nombres de las hojas de calculo es un gran reto, por lo que muchas veces se nos dificulta encotrarlos. Se sugiere usar la siguiente nomenclatura.
+
+1. **Fecha:** En el fomrato internacional (YYYYMMDD), usualmente la fecha esta relacionada al inicio o establecimiento del experimento lo que nos ayudara a contar los dias despues del inicio de trabajo.
+
+<!-- Mostrar app para conteo de dias -->
+
+1. **Abreviacion de lugar:** Permite la facil identificacion de donde se realizo el experimento.
+
+1. **Breve descripción:** Ayuda memoria para recordar de que trata el trabajo
+
+> Ejemplo: **20170819LM (germinacion quinua)**
+
+> Interpretacion: Experimento de germinación en quinua realizado en Lima el 19 de agosto de 2017.
+
+```{block2, type='rmdimportant',  echo = T}
+
+Normalmente un científico o cualquier persona que trabaja con datos terminará con varios archivos con diferentes copias de los datos y varios archivos con pasos intermedios. Si estás trabajando con datos, debería haber habido un momento en el que tenías un archivo con nombre único, pero ahora probablemente tienes:
 
 - data
 - data_V01
@@ -45,16 +60,21 @@ datasharing , 2014
 - veryfinaldata 
 - and some others.
 
+> StatTools & datasharing (Github), 2014
+
+```
+
 
 ## Colecta de datos
 
-### Etiquetas
+1. **Etiquetas**
 
-El etiquetado de los datos es una actividad que siempre se deja de lado, y muchas veces por el trabajo que genera realizarla en la unidades experimentales. Pues piensalo 2 veces antes de dejar esta actividad para el final, un etiquetado adecuado, facilitara la evaluacion y toma de datos en todas las instancias del proyecto.
+El etiquetado de los datos es una actividad que siempre se deja de lado, y muchas veces por el trabajo que genera realizarla en las unidades experimentales. Pues piensalo 2 veces antes de dejar esta actividad para el final, un etiquetado adecuado, facilitara la evaluacion y toma de datos en todas las instancias del proyecto.
 
 
 <!-- Explicar como generar las etiquetas con el libro de campo!! -->
 
-### Evaluacion de las variables
+1. **Evaluacion de las variables**
 
-Independientemente del tipo de diseño que hayas elegido, este será utilizado para **analizar** los datos, en cuanto a la colecta de datos, la informacion sera tomada e inserida al libro de campo para cada unidad experimental.
+Independientemente del tipo de diseño que hayas elegido, este será utilizado para **analizar** los datos, la informacion sera tomada e inserida al libro de campo para cada unidad experimental.
+

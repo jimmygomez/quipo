@@ -1,3 +1,3 @@
-# bookdown-paper
+# Quipo 2.0
 
-Template for paper or these document using bookdown package.
+Procedimientos estadísticos para la investigación y uso del software estadístico R
