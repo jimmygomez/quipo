@@ -54,12 +54,12 @@ library(citr)
 knitr::include_graphics("img/cover.png")
 ```
 
-Quipu 2.0 es un guia para ayudar en el manejo y organización de diferentes tipos de experimentos en las areas de las ciencias agraria y biologicas con uso del software estadístico R.
+Quipo 2.0 es un guia de ayuda en el manejo y organización de diferentes tipos de experimentos en las areas de las ciencias agraria y biologicas haciendo uso del software estadístico R.
 
 
 # Por que leerlo? {-}
 
-Si eres un persona que tiene curiosidad de comenzar una investigacion y no sabes como inciar tu parte experimental, esta guia sera de gran ayuda. A traves de este curso se ira describiendo en forma continua y de manera sensilla la metodologia de la investigacion experimental que puede ser extendidas a otras áres de estudio, con herramientas de aceso libre que seran de gran ayuda. Muchas de estas herramientas tienen como fundamento la ejucucion de codigos, pero no se asusten, ya que se transmitira los conocimientos de una manera facil con un lenguaje sencillo.
+Si estas pensando en iniciar una investigación y no sabes como inciar tu parte experimental, esta guia sera de gran ayuda. A traves de este curso se ira describiendo en forma continua y de manera sensilla la metodología de la investigación experimental que puede ser extendidas a otras áres de estudio, con herramientas de acceso libre que seran de gran ayuda. Estas herramientas tienen como filosofía la programación computacional, lo cual no debe causar temor en los participantes, ya que se transmitira los conocimientos de una manera facil con un lenguaje sencillo.
 
 
 # Organigrama de temas {-}
@@ -107,7 +107,7 @@ El desarrollo tecnológico e industrial de los países se basa en la investigaci
 - Usar herramientas para facilitar la redacción científica.
 
 
-## Cronograma y contenido de curso {-}
+## Cronograma y contenido del curso {-}
 
 
 ```{r}
@@ -127,24 +127,24 @@ cronograma <- data.frame(
   
   "Contenido" = c(
     
-    "Presentación y requisitos del curso",
-    "Lenguaje R y uso de librerías",
-    "Tipos de variables",
+    "Presentación y requisitos del curso.",
+    "Lenguaje R y uso de librerías.",
+    "Tipos de variables.",
     
-    "Importación de base de datos a R",
-    "Manipulación, organización y visualización de datos",
-    "Resumen de base de datos", 
+    "Importación de base de datos a R.",
+    "Manipulación, organización y visualización de datos.",
+    "Resumen de base de datos.", 
     
-    "Metodología de investigación científica",
-    "Planteamiento y diseño de libro de campo",
-    "Colecta e importación de datos",
+    "Metodología de investigación científica.",
+    "Planteamiento y diseño de libro de campo.",
+    "Colecta e importación de datos.",
     
-    "Conceptos basicos de estadistica",
-    "Modelos y diseños experimentales",
+    "Conceptos basicos de estadistica.",
+    "Modelos y diseños experimentales.",
     
-    "Gráfica de resultados de análisis estadísticos",
-    "Análisis multivariado",
-    "Presentacion de la aplicación fieldbook"
+    "Gráfica de resultados de análisis estadísticos.",
+    "Análisis multivariado.",
+    "Presentacion de la aplicación fieldbook."
     
     )
 
@@ -163,17 +163,18 @@ knitr::kable(
 
 ## Softwares {-}
 
-- [R](https://cran.rstudio.com/)
-- [R Studio](https://www.rstudio.com/products/rstudio/download/)
-- [Mendeley](https://www.mendeley.com/)
-- [Github desktop](https://desktop.github.com/)
+- [R](https://cran.rstudio.com/){target="_blank"}
+- [R Studio](https://www.rstudio.com/products/rstudio/download/){target="_blank"}
+- [Mendeley](https://www.mendeley.com/){target="_blank"}
+- [Github desktop](https://desktop.github.com/){target="_blank"}
+
 
 ## Requerimientos técnicos {-}
 
-- Conexión a internet
-- Enchufes para cargar laptops
-- Proyector Multimedia
-- Pizarra
+- Conexión a internet.
+- Enchufes para cargar laptops.
+- Proyector Multimedia.
+- Pizarra.
 
 
 

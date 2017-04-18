@@ -1,8 +1,8 @@
 # Clases
 
-## Introduccion
+## Introducción
 
-Presentación del curso y conceptos basicos de la investigacion y software estadistico R.
+Presentación del curso y conceptos basicos de la investigación y software estadistico R.
 
 ```{r SRT001}
 
@@ -16,9 +16,9 @@ shiny::HTML(
 
 ```
 
-## Mendeley y organizacion de documentos
+## Mendeley y organización de documentos
 
-Uso del software mendeley para organizar documentos y citacion en la redaccion cientifica.
+Uso del software mendeley para organizar documentos y referencias bibliográficas en la redaccion cientifica.
 
 ```{r SRT002}
 
@@ -32,9 +32,9 @@ shiny::HTML(
 
 ```
 
-## Introduccion al R
+## Introducción al R
 
-Introducción al tipo de variables y diccionario de las funciones más usadas en R
+Introducción al tipo de variables, diccionario y funciones de mayor uso en R.
 
 ```{r SRT003}
 
@@ -48,9 +48,9 @@ shiny::HTML(
 
 ```
 
-## R studio y funciones
+## RStudio y funciones
 
-Uso y configuracion de RStudio y manejo de datos (importacion, filtros y seleccion).
+Uso y configuracion de RStudio y manejo de datos (importación, filtros y selección).
 
 ```{r SRT004}
 
@@ -64,9 +64,9 @@ shiny::HTML(
 
 ```
 
-## Conceptos de estadistica
+## Conceptos de estadística
 
-Conceptos basicos de la estadistica y su explicacion en el uso de los experimentos.
+Conceptos basicos de la estadística y su explicación en el uso de los experimentos.
 
 ```{r SRT005}
 
@@ -96,9 +96,9 @@ shiny::HTML(
 
 ```
 
-## Presentacion de resultados
+## Presentación de resultados
 
-Presentacion de los resultados en forma grafica usando distintas librerias en R.
+Presentacion de los resultados en forma gráfica usando distintas librerias en R.
 
 ```{r SRT007}
 
@@ -114,7 +114,7 @@ shiny::HTML(
 
 ## Reproductibilidad
 
-Combinacion de la redaccion cientifica con resultados analizados en R.
+Combinación de los resultados analizados en R y la redaccion cientifica.
 
 ```{r SRT008}
 
