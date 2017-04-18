@@ -6,17 +6,17 @@ participantes <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/1_IZ
 
 ```
 
-## Hotel Santa Cruz
+## INTEROC 
 
 **Organizador:** INTEROC
 
-**Lugar:** Av. Santa Cruz 1347 Miraflores, Lima, Perú.
+**Lugar:** Hotel Santa Cruz - Av. Santa Cruz 1347 Miraflores, Lima, Perú.
 
-**Fecha:** 19 y 20 de abril de 2017.
+**Fecha:** 20 y 21 de abril de 2017.
 
 **Horas:** 12 horas.
 
-**Profesores:**
+**Profesor:**
 
 - Flavio Lozano Isla
 
@@ -89,7 +89,7 @@ knitr::kable(
 
 **Horas:** 25 horas.
 
-**Profesores:**
+**Profesor:**
 
 - Flavio Lozano Isla
 
@@ -121,7 +121,7 @@ knitr::kable(
 
 **Horas:** 25 horas.
 
-**Profesores:**
+**Profesor:**
 
 - Flavio Lozano Isla
 
