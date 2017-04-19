@@ -6,7 +6,7 @@ participantes <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/1_IZ
 
 ```
 
-## Universidad Nacional del Altiplano (UNA)
+## Universidad Nacional del Altiplano (UNA - PUNO)
 
 **Organizador:** Facultad de Agronomía.
 
@@ -34,8 +34,8 @@ participantes <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/1_IZ
 **Profesor:**
 
 - Flavio Lozano Isla
-- Jimmy R, Gomez Carrion
-- Omar Benitez Alfaro
+- Jimmy R. Gomez Carrion
+- Omar Benites Alfaro
 
 
 ## INTEROC 
