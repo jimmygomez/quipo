@@ -27,7 +27,7 @@ participantes <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/1_IZ
 
 **Lugar:** UNALM, Lima, Perú.
 
-**Fecha:** 24 y 25 de abril de 2017.
+**Fecha:** 24 y 25 de abril de 2017 (10:00 - 13:00 & 14:00 - 17:00 hrs).
 
 **Horas:** 12 horas.
 
@@ -44,7 +44,7 @@ participantes <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/1_IZ
 
 **Lugar:** Hotel Santa Cruz - Av. Santa Cruz 1347 Miraflores, Lima, Perú.
 
-**Fecha:** 20 y 21 de abril de 2017.
+**Fecha:** 20 y 21 de abril de 2017 (9:00 - 12:00 & 14:00 - 17:00 hrs).
 
 **Horas:** 12 horas.
 
@@ -60,7 +60,6 @@ participantes <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/1_IZ
 A los participantes del curso de solicita escribir sus nombres y apellidos en MAYUSCULA.
 
 > Gracias
-
 ```
 
 
