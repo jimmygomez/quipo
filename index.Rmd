@@ -1,6 +1,6 @@
 ---
 title: QUIPO 2.0
-author: 'Flavio Lozano Isla'
+author: 'Flavio Lozano Isla, Jimmy R. Gomez Carrion, Omar Benites Alfaro'
 description: Procedimientos estadísticos para la investigación y uso del software estadístico R
 date: '`r Sys.Date()`'
 url: https\://flavjack.github.io/quipo/
