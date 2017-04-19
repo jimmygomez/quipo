@@ -128,4 +128,20 @@ shiny::HTML(
 
 ```
 
+## FieldBook aplicación web
+
+FieldBook aplicacion para el analisis estadìsticos de datos en las areas de las ciencias agropecuarias y biologicas en diseños experimentales. 
+
+```{r SRT009}
+
+shiny::HTML(
+  
+  '
+  <object data="class/SRT009.pdf" type="application/pdf" width="100%" height="420px"></object>
+  
+  '
+  )
+
+```
+
 
