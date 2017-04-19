@@ -6,6 +6,38 @@ participantes <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/1_IZ
 
 ```
 
+## Universidad Nacional del Altiplano (UNA)
+
+**Organizador:** Facultad de Agronomía.
+
+**Lugar:** UNA, Puno, Peru
+
+**Fecha:** mayo de 2017.
+
+**Horas:** 25 horas.
+
+**Profesor:**
+
+- Flavio Lozano Isla
+
+
+## Universidad Nacional Agraria la Molina (UNALM) 
+
+**Organizador:** Incubadora UNALM
+
+**Lugar:** UNALM, Lima, Perú.
+
+**Fecha:** 24 y 25 de abril de 2017.
+
+**Horas:** 12 horas.
+
+**Profesor:**
+
+- Flavio Lozano Isla
+- Jimmy R, Gomez Carrion
+- Omar Benitez Alfaro
+
+
 ## INTEROC 
 
 **Organizador:** INTEROC
