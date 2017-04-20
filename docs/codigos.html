@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>QUIPO 2.0</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="Procedimientos estadísticos para la investigación y uso del software estadístico R">
+  <meta name="generator" content="bookdown 0.3 and GitBook 2.6.7">
+
+  <meta property="og:title" content="QUIPO 2.0" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://flavjack.github.io/quipo/" />
+  <meta property="og:image" content="https://flavjack.github.io/quipo/img/cover.png" />
+  <meta property="og:description" content="Procedimientos estadísticos para la investigación y uso del software estadístico R" />
+  <meta name="github-repo" content="flavjack/quipo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="QUIPO 2.0" />
+  
+  <meta name="twitter:description" content="Procedimientos estadísticos para la investigación y uso del software estadístico R" />
+  <meta name="twitter:image" content="https://flavjack.github.io/quipo/img/cover.png" />
+
+<meta name="author" content="Flavio Lozano Isla, Jimmy R. Gomez Carrion, Omar Benites Alfaro">
+
+
+<meta name="date" content="2017-04-19">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="prev" href="clases.html">
+<link rel="next" href="cursos-y-participantes.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li> <a href="./">Flavio Lozano Isla</a> </li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Bienvenidos</a></li>
+<li class="chapter" data-level="" data-path="por-que-leerlo.html"><a href="por-que-leerlo.html"><i class="fa fa-check"></i>Por que leerlo?</a></li>
+<li class="chapter" data-level="" data-path="organigrama-de-temas.html"><a href="organigrama-de-temas.html"><i class="fa fa-check"></i>Organigrama de temas</a></li>
+<li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html"><i class="fa fa-check"></i>Syllabus</a><ul>
+<li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#datos-generales"><i class="fa fa-check"></i>Datos generales</a></li>
+<li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#justificacion"><i class="fa fa-check"></i>Justificación</a></li>
+<li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#objetivos"><i class="fa fa-check"></i>Objetivos</a></li>
+<li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#cronograma-y-contenido-del-curso"><i class="fa fa-check"></i>Cronograma y contenido del curso</a></li>
+<li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#softwares"><i class="fa fa-check"></i>Softwares</a></li>
+<li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#requerimientos-tecnicos"><i class="fa fa-check"></i>Requerimientos técnicos</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduccion.html"><a href="introduccion.html"><i class="fa fa-check"></i><b>1</b> Introducción</a><ul>
+<li class="chapter" data-level="1.1" data-path="introduccion.html"><a href="introduccion.html#metodo-cientifico"><i class="fa fa-check"></i><b>1.1</b> Método científico</a></li>
+<li class="chapter" data-level="1.2" data-path="introduccion.html"><a href="introduccion.html#la-investigacion-y-la-publicacion"><i class="fa fa-check"></i><b>1.2</b> La investigación y la publicación</a></li>
+<li class="chapter" data-level="1.3" data-path="introduccion.html"><a href="introduccion.html#problemas-comunes-en-la-investigacion"><i class="fa fa-check"></i><b>1.3</b> Problemas comunes en la investigación</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="softwares-y-aplicaciones.html"><a href="softwares-y-aplicaciones.html"><i class="fa fa-check"></i><b>2</b> Softwares y aplicaciones</a><ul>
+<li class="chapter" data-level="2.1" data-path="softwares-y-aplicaciones.html"><a href="softwares-y-aplicaciones.html#software-estadistico-r"><i class="fa fa-check"></i><b>2.1</b> Software estadistico R</a></li>
+<li class="chapter" data-level="2.2" data-path="softwares-y-aplicaciones.html"><a href="softwares-y-aplicaciones.html#r-studio"><i class="fa fa-check"></i><b>2.2</b> R studio</a></li>
+<li class="chapter" data-level="2.3" data-path="softwares-y-aplicaciones.html"><a href="softwares-y-aplicaciones.html#mendeley"><i class="fa fa-check"></i><b>2.3</b> Mendeley</a></li>
+<li class="chapter" data-level="2.4" data-path="softwares-y-aplicaciones.html"><a href="softwares-y-aplicaciones.html#google-spreadsheets"><i class="fa fa-check"></i><b>2.4</b> Google spreadsheets</a></li>
+<li class="chapter" data-level="2.5" data-path="softwares-y-aplicaciones.html"><a href="softwares-y-aplicaciones.html#next-generation-label-printing-system"><i class="fa fa-check"></i><b>2.5</b> Next Generation Label Printing System</a></li>
+<li class="chapter" data-level="2.6" data-path="softwares-y-aplicaciones.html"><a href="softwares-y-aplicaciones.html#calendar-and-countdown"><i class="fa fa-check"></i><b>2.6</b> Calendar and Countdown</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="planeamiento-de-experimentos.html"><a href="planeamiento-de-experimentos.html"><i class="fa fa-check"></i><b>3</b> Planeamiento de experimentos</a><ul>
+<li class="chapter" data-level="3.1" data-path="planeamiento-de-experimentos.html"><a href="planeamiento-de-experimentos.html#fieldbook"><i class="fa fa-check"></i><b>3.1</b> Fieldbook</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="planeamiento-de-experimentos.html"><a href="planeamiento-de-experimentos.html#nombre-del-libro-de-campo-fieldbook"><i class="fa fa-check"></i><b>3.1.1</b> Nombre del libro de campo (Fieldbook)</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="planeamiento-de-experimentos.html"><a href="planeamiento-de-experimentos.html#colecta-de-datos"><i class="fa fa-check"></i><b>3.2</b> Colecta de datos</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="clases.html"><a href="clases.html"><i class="fa fa-check"></i><b>4</b> Clases</a><ul>
+<li class="chapter" data-level="4.1" data-path="clases.html"><a href="clases.html#introduccion-1"><i class="fa fa-check"></i><b>4.1</b> Introducción</a></li>
+<li class="chapter" data-level="4.2" data-path="clases.html"><a href="clases.html#mendeley-y-organizacion-de-documentos"><i class="fa fa-check"></i><b>4.2</b> Mendeley y organización de documentos</a></li>
+<li class="chapter" data-level="4.3" data-path="clases.html"><a href="clases.html#introduccion-al-r"><i class="fa fa-check"></i><b>4.3</b> Introducción al R</a></li>
+<li class="chapter" data-level="4.4" data-path="clases.html"><a href="clases.html#rstudio-y-funciones"><i class="fa fa-check"></i><b>4.4</b> RStudio y funciones</a></li>
+<li class="chapter" data-level="4.5" data-path="clases.html"><a href="clases.html#conceptos-de-estadistica"><i class="fa fa-check"></i><b>4.5</b> Conceptos de estadística</a></li>
+<li class="chapter" data-level="4.6" data-path="clases.html"><a href="clases.html#disenos-experimentales"><i class="fa fa-check"></i><b>4.6</b> Diseños experimentales</a></li>
+<li class="chapter" data-level="4.7" data-path="clases.html"><a href="clases.html#presentacion-de-resultados"><i class="fa fa-check"></i><b>4.7</b> Presentación de resultados</a></li>
+<li class="chapter" data-level="4.8" data-path="clases.html"><a href="clases.html#reproductibilidad"><i class="fa fa-check"></i><b>4.8</b> Reproductibilidad</a></li>
+<li class="chapter" data-level="4.9" data-path="clases.html"><a href="clases.html#fieldbook-aplicacion-web"><i class="fa fa-check"></i><b>4.9</b> FieldBook aplicación web</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="codigos.html"><a href="codigos.html"><i class="fa fa-check"></i><b>5</b> Códigos</a><ul>
+<li class="chapter" data-level="5.1" data-path="codigos.html"><a href="codigos.html#base-de-datos"><i class="fa fa-check"></i><b>5.1</b> Base de datos</a></li>
+<li class="chapter" data-level="5.2" data-path="codigos.html"><a href="codigos.html#cargar-paquetes"><i class="fa fa-check"></i><b>5.2</b> Cargar paquetes</a></li>
+<li class="chapter" data-level="5.3" data-path="codigos.html"><a href="codigos.html#diseno-experimental"><i class="fa fa-check"></i><b>5.3</b> Diseño experimental</a></li>
+<li class="chapter" data-level="5.4" data-path="codigos.html"><a href="codigos.html#importar-datos"><i class="fa fa-check"></i><b>5.4</b> Importar datos</a></li>
+<li class="chapter" data-level="5.5" data-path="codigos.html"><a href="codigos.html#box-plot"><i class="fa fa-check"></i><b>5.5</b> Box plot</a></li>
+<li class="chapter" data-level="5.6" data-path="codigos.html"><a href="codigos.html#anova"><i class="fa fa-check"></i><b>5.6</b> ANOVA</a></li>
+<li class="chapter" data-level="5.7" data-path="codigos.html"><a href="codigos.html#comparacion-de-medias"><i class="fa fa-check"></i><b>5.7</b> Comparación de medias</a></li>
+<li class="chapter" data-level="5.8" data-path="codigos.html"><a href="codigos.html#bar-plot"><i class="fa fa-check"></i><b>5.8</b> Bar plot</a></li>
+<li class="chapter" data-level="5.9" data-path="codigos.html"><a href="codigos.html#line-plot"><i class="fa fa-check"></i><b>5.9</b> Line plot</a></li>
+<li class="chapter" data-level="5.10" data-path="codigos.html"><a href="codigos.html#analisis-de-correlacion"><i class="fa fa-check"></i><b>5.10</b> Análisis de correlación</a></li>
+<li class="chapter" data-level="5.11" data-path="codigos.html"><a href="codigos.html#analisis-de-componentes-principales"><i class="fa fa-check"></i><b>5.11</b> Análisis de componentes principales</a></li>
+<li class="chapter" data-level="5.12" data-path="codigos.html"><a href="codigos.html#datos-metereologicos"><i class="fa fa-check"></i><b>5.12</b> Datos metereológicos</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="cursos-y-participantes.html"><a href="cursos-y-participantes.html"><i class="fa fa-check"></i><b>6</b> Cursos y participantes</a><ul>
+<li class="chapter" data-level="6.1" data-path="cursos-y-participantes.html"><a href="cursos-y-participantes.html#universidad-nacional-del-altiplano-una---puno"><i class="fa fa-check"></i><b>6.1</b> Universidad Nacional del Altiplano (UNA - PUNO)</a></li>
+<li class="chapter" data-level="6.2" data-path="cursos-y-participantes.html"><a href="cursos-y-participantes.html#universidad-nacional-agraria-la-molina-unalm"><i class="fa fa-check"></i><b>6.2</b> Universidad Nacional Agraria la Molina (UNALM)</a></li>
+<li class="chapter" data-level="6.3" data-path="cursos-y-participantes.html"><a href="cursos-y-participantes.html#interoc"><i class="fa fa-check"></i><b>6.3</b> INTEROC</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="cursos-y-participantes.html"><a href="cursos-y-participantes.html#registro-de-participantes"><i class="fa fa-check"></i><b>6.3.1</b> Registro de Participantes</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="cursos-y-participantes.html"><a href="cursos-y-participantes.html#univesidad-nacional-agraria-la-molina-unalm"><i class="fa fa-check"></i><b>6.4</b> Univesidad Nacional Agraria la Molina (UNALM)</a></li>
+<li class="chapter" data-level="6.5" data-path="cursos-y-participantes.html"><a href="cursos-y-participantes.html#univesidad-nacional-agraria-la-molina-unalm-1"><i class="fa fa-check"></i><b>6.5</b> Univesidad Nacional Agraria la Molina (UNALM)</a></li>
+<li class="chapter" data-level="6.6" data-path="cursos-y-participantes.html"><a href="cursos-y-participantes.html#univesidad-nacional-agraria-la-molina-unalm-2"><i class="fa fa-check"></i><b>6.6</b> Univesidad Nacional Agraria la Molina (UNALM)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+<li class="divider"></li>
+<li> <a href="mailto:flavjack@gmail.com" target="blank"> Send a comment </a> </li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">QUIPO 2.0</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="codigos" class="section level1">
+<h1><span class="header-section-number">5</span> Códigos</h1>
+<div id="base-de-datos" class="section level2">
+<h2><span class="header-section-number">5.1</span> Base de datos</h2>
+
+<iframe src="https://docs.google.com/spreadsheets/d/1sfy6XaCAYKqU1siOr9VP_I5wAzRBjjMmdr1nK387J0s/edit?usp=sharing" style="width: 100%; height: 450px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0"></iframe>
+
+</div>
+<div id="cargar-paquetes" class="section level2">
+<h2><span class="header-section-number">5.2</span> Cargar paquetes</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(gsheet)
+<span class="kw">library</span>(openxlsx)
+<span class="kw">library</span>(car)
+<span class="kw">library</span>(GerminaR)
+<span class="kw">library</span>(corrplot)
+<span class="kw">library</span>(FactoMineR)
+<span class="kw">library</span>(tidyverse)</code></pre></div>
+</div>
+<div id="diseno-experimental" class="section level2">
+<h2><span class="header-section-number">5.3</span> Diseño experimental</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Factorial in Complete Randomize Design</span>
+
+<span class="co"># Seeds (3) .: Tomato, Corn, Beans </span>
+<span class="co"># Temperature (5) .: T15, T20, T25, T30, T35</span>
+<span class="co"># Rep .: 5</span>
+
+<span class="kw">library</span>(agricolae)
+
+fb &lt;-<span class="st"> </span><span class="kw">design.ab</span>(<span class="dt">trt =</span> <span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">5</span>), <span class="dt">r =</span> <span class="dv">5</span>,<span class="dt">design =</span> <span class="st">&quot;crd&quot;</span>)
+fb$book</code></pre></div>
+</div>
+<div id="importar-datos" class="section level2">
+<h2><span class="header-section-number">5.4</span> Importar datos</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Import Data Google Spreadsheets</span>
+
+url &lt;-<span class="st"> &quot;https://docs.google.com/spreadsheets/d/1sfy6XaCAYKqU1siOr9VP_I5wAzRBjjMmdr1nK387J0s/edit#gid=1326844779&quot;</span>
+fb &lt;-<span class="st"> </span><span class="kw">gsheet2tbl</span>(url)
+fb &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(fb)
+
+<span class="co"># Import Data Excel</span>
+
+fb &lt;-<span class="st"> </span><span class="kw">read.xlsx</span>(<span class="kw">choose.files</span>(), <span class="dt">sheet =</span> <span class="st">&quot;MV&quot;</span>)</code></pre></div>
+</div>
+<div id="box-plot" class="section level2">
+<h2><span class="header-section-number">5.5</span> Box plot</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Using Linear Model</span>
+
+bp &lt;-<span class="st"> </span><span class="kw">Boxplot</span>( TUBDW  ~<span class="st"> </span>Genotype, fb, <span class="dt">las =</span> <span class="dv">3</span>, <span class="dt">id.n=</span><span class="ot">Inf</span> ) 
+fb$TUBDW[<span class="kw">as.numeric</span>(bp)]  &lt;-<span class="st"> </span><span class="ot">NA</span>
+bp &lt;-<span class="st"> </span><span class="kw">Boxplot</span>( TUBDW  ~<span class="st"> </span>Genotype, fb, <span class="dt">las =</span> <span class="dv">3</span>, <span class="dt">id.n=</span><span class="ot">Inf</span> ) </code></pre></div>
+</div>
+<div id="anova" class="section level2">
+<h2><span class="header-section-number">5.6</span> ANOVA</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">av &lt;-<span class="st"> </span><span class="kw">aov</span>( TUBDW  ~<span class="st"> </span>Treat *<span class="st"> </span>Genotype, fb)
+<span class="kw">summary</span>(av)</code></pre></div>
+</div>
+<div id="comparacion-de-medias" class="section level2">
+<h2><span class="header-section-number">5.7</span> Comparación de medias</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Student-Newman-Keuls  ####</span>
+
+mc &lt;-<span class="st"> </span><span class="kw">SNK.test</span>(av, <span class="kw">c</span>(<span class="st">&quot;Genotype&quot;</span>, <span class="st">&quot;Treat&quot;</span>))
+mc$statistics
+mc$means
+mc$groups
+
+<span class="co"># Tabla de comparacion de medias</span>
+
+mc &lt;-<span class="st"> </span>GerminaR::<span class="kw">ger_testcomp</span>(<span class="dt">aov =</span> av, <span class="dt">comp =</span> <span class="kw">c</span>(<span class="st">&quot;Genotype&quot;</span>, <span class="st">&quot;Treat&quot;</span>), <span class="dt">type =</span> <span class="st">&quot;snk&quot;</span>)
+mc</code></pre></div>
+</div>
+<div id="bar-plot" class="section level2">
+<h2><span class="header-section-number">5.8</span> Bar plot</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># ggplot2</span>
+
+<span class="kw">ggplot</span>(mc, <span class="kw">aes</span>(<span class="dt">x =</span> Genotype , <span class="dt">y =</span>  mean , <span class="dt">fill=</span> Treat))+
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position=</span><span class="kw">position_dodge</span>(),<span class="dt">colour=</span><span class="st">&quot;black&quot;</span>,<span class="dt">stat=</span><span class="st">&quot;identity&quot;</span>, <span class="dt">size=</span>.<span class="dv">5</span>)+
+<span class="st">  </span><span class="kw">geom_errorbar</span>(<span class="kw">aes</span>(<span class="dt">ymin=</span> mean -<span class="st"> </span>ste , <span class="dt">ymax=</span> mean +<span class="st"> </span>ste), <span class="dt">size=</span>.<span class="dv">3</span>,<span class="dt">width=</span>.<span class="dv">2</span>,<span class="dt">position=</span><span class="kw">position_dodge</span>(.<span class="dv">9</span>)) +
+<span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;Peso de tuberculo (g)&quot;</span>) +
+<span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Genotype&quot;</span>) +
+<span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">limits =</span> <span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">80</span>), <span class="dt">breaks=</span> <span class="dv">0</span>:<span class="dv">50</span>*<span class="dv">5</span>) +
+<span class="st">  </span><span class="kw">theme_bw</span>()+
+<span class="st">  </span><span class="kw">geom_text</span>(<span class="kw">aes</span>(<span class="dt">label=</span> sg), <span class="dt">colour=</span><span class="st">&quot;black&quot;</span> , <span class="dt">vjust=</span><span class="dv">1</span>,  <span class="dt">hjust=</span> -<span class="fl">0.5</span> , <span class="dt">angle =</span> <span class="dv">90</span>, <span class="dt">size=</span> <span class="dv">3</span> , <span class="dt">position=</span><span class="kw">position_dodge</span>(.<span class="dv">9</span>))
+
+<span class="co"># GerminaR</span>
+
+<span class="kw">fplot</span>(<span class="dt">data =</span> mc, <span class="dt">type =</span> <span class="st">&quot;bar&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;Genotype&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;mean&quot;</span>, <span class="dt">z =</span> <span class="st">&quot;Treat&quot;</span>, <span class="dv">4</span>,
+      <span class="dt">ylab =</span> <span class="st">&quot;Peso de tuberculo (g)&quot;</span>, <span class="dt">xlab =</span> <span class="st">&quot;Genotipos&quot;</span>, <span class="dt">lgl =</span> <span class="st">&quot;Tratamiento&quot;</span>,
+      <span class="dt">erb =</span> T, <span class="dt">lmt =</span> <span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">80</span>), <span class="dt">brk =</span> <span class="dv">10</span>, <span class="dt">color =</span> T, <span class="dt">sig =</span> <span class="st">&quot;sg&quot;</span>)</code></pre></div>
+</div>
+<div id="line-plot" class="section level2">
+<h2><span class="header-section-number">5.9</span> Line plot</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># ggplot2</span>
+
+<span class="kw">ggplot</span>(mc, <span class="kw">aes</span>(<span class="dt">x =</span> Genotype , <span class="dt">y =</span> mean, <span class="dt">group=</span> Treat, <span class="dt">colour=</span> Treat)) +
+<span class="st">  </span><span class="kw">geom_line</span>() +
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">shape=</span><span class="dv">19</span>, <span class="dt">size=</span><span class="dv">2</span>)+
+<span class="st">  </span><span class="kw">theme_bw</span>()+
+<span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">limits =</span> <span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">80</span>), <span class="dt">breaks=</span><span class="dv">0</span>:<span class="dv">50</span>*<span class="dv">5</span>)+
+<span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;Peso de tuberculo (g)&quot;</span>) +
+<span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Genotype&quot;</span>)+
+<span class="st">  </span><span class="kw">geom_text</span>(<span class="kw">aes</span>(<span class="dt">label=</span> sg), <span class="dt">colour=</span><span class="st">&quot;black&quot;</span> , <span class="dt">vjust=</span><span class="dv">0</span>,  <span class="dt">hjust=</span> <span class="dv">0</span> , <span class="dt">angle =</span> <span class="dv">90</span>, <span class="dt">size=</span> <span class="dv">3</span> , <span class="dt">position=</span><span class="kw">position_dodge</span>(.<span class="dv">9</span>))+
+<span class="st">  </span><span class="kw">geom_errorbar</span>(<span class="kw">aes</span>(<span class="dt">ymin=</span> mean -<span class="st"> </span>ste , <span class="dt">ymax=</span> mean +<span class="st"> </span>ste), <span class="dt">size=</span>.<span class="dv">3</span>,<span class="dt">width=</span>.<span class="dv">2</span>)
+
+<span class="co"># GerminaR</span>
+
+<span class="kw">fplot</span>(<span class="dt">data =</span> mc, <span class="dt">type =</span> <span class="st">&quot;line&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;Genotype&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;mean&quot;</span>, <span class="dt">z =</span> <span class="st">&quot;Treat&quot;</span>, <span class="dv">4</span>,
+      <span class="dt">ylab =</span> <span class="st">&quot;Peso de tuberculo (g)&quot;</span>, <span class="dt">xlab =</span> <span class="st">&quot;Genotipos&quot;</span>, <span class="dt">lgl =</span> <span class="st">&quot;Tratamiento&quot;</span>,
+      <span class="dt">erb =</span> T, <span class="dt">lmt =</span> <span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">80</span>), <span class="dt">brk =</span> <span class="dv">10</span>, <span class="dt">color =</span> T, <span class="dt">sig =</span> <span class="st">&quot;sg&quot;</span>)</code></pre></div>
+</div>
+<div id="analisis-de-correlacion" class="section level2">
+<h2><span class="header-section-number">5.10</span> Análisis de correlación</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Corroplot</span>
+
+<span class="co"># Correlation Analysis</span>
+
+cr &lt;-<span class="st"> </span><span class="kw">correlation</span>(fb[<span class="dv">5</span>:<span class="dv">16</span>],<span class="dt">method =</span> <span class="st">&quot;pearson&quot;</span>)
+cr$correlation
+cr$pvalue
+
+<span class="co"># Correlation Plot</span>
+
+col &lt;-<span class="st"> </span><span class="kw">colorRampPalette</span>(<span class="kw">c</span>(<span class="st">&quot;#1E90FF&quot;</span>, <span class="st">&quot;#6495ED&quot;</span>,<span class="st">&quot;#7FFFD4&quot;</span>, <span class="st">&quot;#FFF0F5&quot;</span>, <span class="st">&quot;#FFF0F5&quot;</span>,<span class="st">&quot;#FFD700&quot;</span>, <span class="st">&quot;#FF4500&quot;</span>, <span class="st">&quot;#DC143C&quot;</span>))
+
+<span class="co">#png(height=1500, width=1500, pointsize=20, file=&quot;correlation.png&quot;)</span>
+cp &lt;-<span class="st"> </span><span class="kw">corrplot</span>(<span class="dt">corr =</span> cr$correlation, <span class="dt">method =</span> <span class="st">&quot;color&quot;</span>, <span class="dt">type =</span> <span class="st">&quot;upper&quot;</span>, <span class="dt">tl.col=</span><span class="st">&quot;black&quot;</span>, 
+               <span class="dt">tl.srt=</span><span class="dv">30</span>, <span class="dt">tl.cex =</span> <span class="dv">1</span>, <span class="dt">addCoef.col =</span> <span class="st">&quot;black&quot;</span>, <span class="dt">col=</span><span class="kw">col</span>(<span class="dv">200</span>), 
+               <span class="dt">p.mat =</span> cr$pvalue, <span class="dt">sig.level =</span> <span class="fl">0.05</span>, <span class="dt">insig =</span> <span class="st">&quot;blank&quot;</span>, <span class="dt">addgrid.col =</span> <span class="st">&quot;black&quot;</span> )
+<span class="co">#dev.off()</span></code></pre></div>
+</div>
+<div id="analisis-de-componentes-principales" class="section level2">
+<h2><span class="header-section-number">5.11</span> Análisis de componentes principales</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Principal Component Analisys</span>
+
+pca &lt;-<span class="st"> </span><span class="kw">PCA</span>(fb[<span class="dv">4</span>:<span class="dv">18</span>],<span class="dt">graph =</span> F, <span class="dt">quali.sup =</span> <span class="dv">1</span>)
+
+<span class="co"># PCA plot</span>
+
+<span class="co">#png(height=1000, width=1000, pointsize=20, file=&quot;PCA.png&quot;)</span>
+<span class="kw">plot</span>(pca,<span class="dt">choix=</span><span class="kw">c</span>(<span class="st">&quot;var&quot;</span>),<span class="dt">habillage=</span> <span class="dv">1</span>, <span class="dt">cex=</span><span class="fl">0.8</span>,<span class="dt">shadow=</span>T,<span class="dt">autoLab=</span><span class="st">&quot;yes&quot;</span>,<span class="dt">title =</span> <span class="st">&quot;&quot;</span>) <span class="co"># choix=c(&quot;ind&quot;)</span>
+<span class="co">#dev.off()</span></code></pre></div>
+</div>
+<div id="datos-metereologicos" class="section level2">
+<h2><span class="header-section-number">5.12</span> Datos metereológicos</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Meteorological data</span>
+
+url &lt;-<span class="st"> &quot;https://docs.google.com/spreadsheets/d/1sfy6XaCAYKqU1siOr9VP_I5wAzRBjjMmdr1nK387J0s/edit#gid=225298935&quot;</span>
+md &lt;-<span class="st"> </span><span class="kw">gsheet2tbl</span>(url)
+md &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(md)
+md$DATE &lt;-<span class="st"> </span><span class="kw">as.Date</span>(md$DATE, <span class="dt">format =</span> <span class="st">&quot;%m/%d/%y&quot;</span>)
+<span class="kw">str</span>(md)
+
+<span class="kw">ggplot</span>(md, <span class="kw">aes</span>(<span class="dt">x =</span> DATE, <span class="dt">y =</span> Temp)) +<span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">colour =</span> Temp)) +
+<span class="st">  </span><span class="kw">scale_colour_gradient2</span>(<span class="dt">low =</span> <span class="st">&quot;blue&quot;</span>, <span class="dt">mid =</span> <span class="st">&quot;green&quot;</span> , <span class="dt">high =</span> <span class="st">&quot;red&quot;</span>, <span class="dt">midpoint =</span> <span class="dv">31</span>) +<span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_smooth</span>() +
+<span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">limits =</span> <span class="kw">c</span>(<span class="dv">20</span>,<span class="dv">45</span>), <span class="dt">breaks=</span><span class="dv">0</span>:<span class="dv">100</span>*<span class="dv">5</span>) +
+<span class="st">  </span><span class="kw">theme_bw</span>()+
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">angle =</span> <span class="dv">45</span>, <span class="dt">hjust =</span> <span class="fl">0.8</span>))+
+<span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Date&quot;</span>) +<span class="st">  </span><span class="kw">ylab</span> (<span class="st">&quot;Temperature (ºC)&quot;</span>)</code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="clases.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="cursos-y-participantes.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": false,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "sepia",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/Flavjack/quipo/blob/master/code.Rmd",
+"text": "Edit"
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"search": true
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -176,9 +176,3 @@ knitr::kable(
 - Proyector Multimedia.
 - Pizarra.
 
-
-
-
-
-
-

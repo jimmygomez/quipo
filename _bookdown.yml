@@ -6,6 +6,7 @@ rmd_files: [
   "soft.Rmd",
   "exp.Rmd",
   "class.Rmd",
+  "code.Rmd",
   "course.Rmd",
   "ref.Rmd"
   ]
