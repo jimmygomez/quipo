@@ -18,6 +18,7 @@ shiny::HTML(
 
 ```{r pkg, eval=FALSE, echo=TRUE}
 
+library(agricolae)
 library(gsheet)
 library(openxlsx)
 library(car)
@@ -42,6 +43,11 @@ library(agricolae)
 
 fb <- design.ab(trt = c(3,5), r = 5,design = "crd")
 fb$book
+
+# Exportar fieldbook in csv
+
+getwd()
+write.csv(x = fb$book, file = "fb.csv")
 
 ```
 
