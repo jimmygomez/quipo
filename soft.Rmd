@@ -4,7 +4,7 @@ Los software que se harán uso en este guía, son de distribucion gratuitas o de
 
 ## Software estadistico R
 
-En el año 1992, los investigadores Ross Ihaka y Robert Gentleman, ambos de la Universidad de Auckland, Nueva Zelandia, desarrollaron un software para el analisis estadistico y le atribuyeron el nombre de software R, el cual fue basado en el lenguaje de programacion _S_, inicialmente desarrollado en los laboratorios de _AT&T Bell_ a mediados del año 1970 [@calenge2006package]. 
+En el año 1992, los investigadores **Ross Ihaka y Robert Gentleman**, ambos de la Universidad de Auckland, Nueva Zelandia, desarrollaron un software para el analisis estadistico y le atribuyeron el nombre de software R, el cual fue basado en el lenguaje de programacion _S_, inicialmente desarrollado en los laboratorios de _AT&T Bell_ a mediados del año 1970 [@calenge2006package]. 
 
 Cuando  R. Ihaka e R. Gentleman lanzaron el software R, le atribuyeron funcionalidad de ser de código abierto [@Ihaka2012], lanzando la plataforma "Comprehensive R Archive Network (CRAN)", que es el nucleo donde se hospeda la mayoria de los paquetes del software R. El CRAN es una comunidad cada vez creciente y es el principal repositorio de material relacionado a R [@Hornik2002].
 

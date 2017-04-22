@@ -37,36 +37,6 @@ participantes <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/1_IZ
 - Jimmy R. Gomez Carrion
 - Omar Benites Alfaro
 
-
-## INTEROC 
-
-**Organizador:** INTEROC
-
-**Lugar:** Hotel Santa Cruz - Av. Santa Cruz 1347 Miraflores, Lima, Perú.
-
-**Fecha:** 20 y 21 de abril de 2017 (9:00 - 12:00 & 14:00 - 17:00 hrs).
-
-**Horas:** 12 horas.
-
-**Profesor:**
-
-- Flavio Lozano Isla
-
-
-```{r P201704}
-
-P201704 <- participantes %>% dplyr::filter(FECHA == "2017-04") %>% dplyr::select(PARTICIPANTES, EMAIL)
-
-knitr::kable(
-  P201704,
-  caption = "Participantes del curso. Abril 2017, INTRAROC",
-  align = "l",
-  booktabs = TRUE
-  )
-
-```
-
-
 <!-- ### Registro de Participantes -->
 
 <!-- ```{block2, type='rmdwarning',  echo = T} -->
@@ -88,6 +58,33 @@ knitr::kable(
 <!-- ) -->
 
 <!-- ``` -->
+
+## INTEROC 
+
+**Organizador:** INTEROC
+
+**Lugar:** Hotel Santa Cruz - Av. Santa Cruz 1347 Miraflores, Lima, Perú.
+
+**Fecha:** 20 y 21 de abril de 2017 (9:00 - 12:00 & 14:00 - 17:00 hrs).
+
+**Horas:** 12 horas.
+
+**Profesor:**
+
+- Flavio Lozano Isla
+
+```{r P201704}
+
+P201704 <- participantes %>% dplyr::filter(FECHA == "2017-04") %>% dplyr::select(PARTICIPANTES, EMAIL)
+
+knitr::kable(
+  P201704,
+  caption = "Participantes del curso. Abril 2017, INTRAROC",
+  align = "l",
+  booktabs = TRUE
+  )
+
+```
 
 
 ## Univesidad Nacional Agraria la Molina (UNALM)

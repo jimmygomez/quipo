@@ -26,7 +26,7 @@
 <meta name="author" content="Flavio Lozano Isla, Jimmy R. Gomez Carrion, Omar Benites Alfaro">
 
 
-<meta name="date" content="2017-04-21">
+<meta name="date" content="2017-04-22">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -199,6 +199,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="cargar-paquetes" class="section level2">
 <h2><span class="header-section-number">5.2</span> Cargar paquetes</h2>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(agricolae)
+<span class="kw">library</span>(fieldbook)
 <span class="kw">library</span>(gsheet)
 <span class="kw">library</span>(openxlsx)
 <span class="kw">library</span>(car)
@@ -227,15 +228,15 @@ fb$book
 </div>
 <div id="importar-datos" class="section level2">
 <h2><span class="header-section-number">5.4</span> Importar datos</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Import Data Google Spreadsheets</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Import data Google Spreadsheets</span>
 
 url &lt;-<span class="st"> &quot;https://docs.google.com/spreadsheets/d/1sfy6XaCAYKqU1siOr9VP_I5wAzRBjjMmdr1nK387J0s/edit#gid=1326844779&quot;</span>
 fb &lt;-<span class="st"> </span><span class="kw">gsheet2tbl</span>(url)
 fb &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(fb)
 
-<span class="co"># Import Data Excel</span>
+<span class="co"># Import data Excel</span>
 
-fb &lt;-<span class="st"> </span><span class="kw">read.xlsx</span>(<span class="kw">choose.files</span>(), <span class="dt">sheet =</span> <span class="st">&quot;MV&quot;</span>)</code></pre></div>
+<span class="co"># fb &lt;- read.xlsx(choose.files(), sheet = &quot;MV&quot;)</span></code></pre></div>
 </div>
 <div id="box-plot" class="section level2">
 <h2><span class="header-section-number">5.5</span> Box plot</h2>
@@ -247,19 +248,19 @@ bp &lt;-<span class="st"> </span><span class="kw">Boxplot</span>( TUBDW  ~<span 
 </div>
 <div id="anova" class="section level2">
 <h2><span class="header-section-number">5.6</span> ANOVA</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">av &lt;-<span class="st"> </span><span class="kw">aov</span>( TUBDW  ~<span class="st"> </span>Treat *<span class="st"> </span>Genotype, fb)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">av &lt;-<span class="st"> </span><span class="kw">aov</span>( LA  ~<span class="st"> </span>Treat *<span class="st"> </span>Genotype, fb)
 <span class="kw">summary</span>(av)</code></pre></div>
 </div>
 <div id="comparacion-de-medias" class="section level2">
 <h2><span class="header-section-number">5.7</span> Comparación de medias</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Student-Newman-Keuls  ####</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Student-Newman-Keuls (agricolae)</span>
 
 mc &lt;-<span class="st"> </span><span class="kw">SNK.test</span>(av, <span class="kw">c</span>(<span class="st">&quot;Genotype&quot;</span>, <span class="st">&quot;Treat&quot;</span>))
 mc$statistics
 mc$means
 mc$groups
 
-<span class="co"># Tabla de comparacion de medias</span>
+<span class="co"># Tabla de comparacion de medias (GerminaR)</span>
 
 mc &lt;-<span class="st"> </span>GerminaR::<span class="kw">ger_testcomp</span>(<span class="dt">aov =</span> av, <span class="dt">comp =</span> <span class="kw">c</span>(<span class="st">&quot;Genotype&quot;</span>, <span class="st">&quot;Treat&quot;</span>), <span class="dt">type =</span> <span class="st">&quot;snk&quot;</span>)
 mc</code></pre></div>
@@ -279,7 +280,7 @@ mc</code></pre></div>
 
 <span class="co"># GerminaR</span>
 
-<span class="kw">fplot</span>(<span class="dt">data =</span> mc, <span class="dt">type =</span> <span class="st">&quot;bar&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;Genotype&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;mean&quot;</span>, <span class="dt">z =</span> <span class="st">&quot;Treat&quot;</span>, <span class="dv">4</span>,
+<span class="kw">fplot</span>(<span class="dt">data =</span> mc, <span class="dt">type =</span> <span class="st">&quot;bar&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;Genotype&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;mean&quot;</span>, <span class="dt">z =</span> <span class="st">&quot;Treat&quot;</span>,
       <span class="dt">ylab =</span> <span class="st">&quot;Peso de tuberculo (g)&quot;</span>, <span class="dt">xlab =</span> <span class="st">&quot;Genotipos&quot;</span>, <span class="dt">lgl =</span> <span class="st">&quot;Tratamiento&quot;</span>,
       <span class="dt">erb =</span> T, <span class="dt">lmt =</span> <span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">80</span>), <span class="dt">brk =</span> <span class="dv">10</span>, <span class="dt">color =</span> T, <span class="dt">sig =</span> <span class="st">&quot;sg&quot;</span>)</code></pre></div>
 </div>

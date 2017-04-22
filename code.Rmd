@@ -19,6 +19,7 @@ shiny::HTML(
 ```{r pkg, eval=FALSE, echo=TRUE}
 
 library(agricolae)
+library(fieldbook)
 library(gsheet)
 library(openxlsx)
 library(car)
@@ -55,15 +56,15 @@ write.csv(x = fb$book, file = "fb.csv")
 
 ```{r upld, eval=FALSE, echo=TRUE}
 
-# Import Data Google Spreadsheets
+# Import data Google Spreadsheets
 
 url <- "https://docs.google.com/spreadsheets/d/1sfy6XaCAYKqU1siOr9VP_I5wAzRBjjMmdr1nK387J0s/edit#gid=1326844779"
 fb <- gsheet2tbl(url)
 fb <- as.data.frame(fb)
 
-# Import Data Excel
+# Import data Excel
 
-fb <- read.xlsx(choose.files(), sheet = "MV")
+# fb <- read.xlsx(choose.files(), sheet = "MV")
 
 ```
 
@@ -83,7 +84,7 @@ bp <- Boxplot( TUBDW  ~ Genotype, fb, las = 3, id.n=Inf )
 
 ```{r anova, eval=FALSE, echo=TRUE}
 
-av <- aov( TUBDW  ~ Treat * Genotype, fb)
+av <- aov( LA  ~ Treat * Genotype, fb)
 summary(av)
 
 ```
@@ -92,14 +93,14 @@ summary(av)
 
 ```{r mc, eval=FALSE, echo=TRUE}
 
-# Student-Newman-Keuls  ####
+# Student-Newman-Keuls (agricolae)
 
 mc <- SNK.test(av, c("Genotype", "Treat"))
 mc$statistics
 mc$means
 mc$groups
 
-# Tabla de comparacion de medias
+# Tabla de comparacion de medias (GerminaR)
 
 mc <- GerminaR::ger_testcomp(aov = av, comp = c("Genotype", "Treat"), type = "snk")
 mc
@@ -123,7 +124,7 @@ ggplot(mc, aes(x = Genotype , y =  mean , fill= Treat))+
 
 # GerminaR
 
-fplot(data = mc, type = "bar", x = "Genotype", y = "mean", z = "Treat", 4,
+fplot(data = mc, type = "bar", x = "Genotype", y = "mean", z = "Treat",
       ylab = "Peso de tuberculo (g)", xlab = "Genotipos", lgl = "Tratamiento",
       erb = T, lmt = c(0,80), brk = 10, color = T, sig = "sg")
 
