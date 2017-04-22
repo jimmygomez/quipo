@@ -79,9 +79,27 @@ P201704 <- participantes %>% dplyr::filter(FECHA == "2017-04") %>% dplyr::select
 
 knitr::kable(
   P201704,
-  caption = "Participantes del curso. Abril 2017, INTRAROC",
+  caption = "Participantes del curso. Abril 2017, INTEROC",
   align = "l",
   booktabs = TRUE
+  )
+
+```
+
+> Agradecimientos a los Ingenieros Héctor Tejada y Mary Yauyo por la confianza y permitir que este curso sea impartido en su empresa.
+
+
+### Certificados
+
+
+```{r SRT20170421}
+
+shiny::HTML(
+  
+  '
+  <object data="courses/20170421.pdf" type="application/pdf" width="100%" height="420px"></object>
+  
+  '
   )
 
 ```
@@ -155,7 +173,7 @@ knitr::kable(
 
 ## Univesidad Nacional Agraria la Molina (UNALM)
 
-**Organizador:** Circulo de Investigacion en Fitomejoramiento (CIF).
+**Organizador:** Laboratorio de Biotecnologia.
 
 **Lugar:** UNALM, Lima, Perú.
 
